@@ -1,7 +1,7 @@
 ---
 name: Data product request
 about: For requesting EFH products from the EFH analytical team
-title: "[EFH data product request]"
+title: "Product request: [Insert short description of the EFH product you want]"
 labels: ''
 assignees: ''
 
