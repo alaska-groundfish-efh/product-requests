@@ -1,7 +1,7 @@
 ---
 name: Data product request
 about: For requesting EFH products from the EFH analytical team
-title: "Product request: [Insert short description of the EFH product you want]"
+title: "[Add description of EFH product you are requesting]"
 labels: ''
 assignees: ''
 
@@ -14,6 +14,11 @@ assignees: ''
 **Lifestage(s)**:
 
 **Region(s)** (GOA, AI, Bering Sea):
+
+**Format**: 
+
+- [ ] Raster
+- [ ] Shapefile
 
 **Research team making the request** (PI /requester name, and tag team members with GitHub accounts, or email address if requestor does not have a GitHub account. Division is nice too.):
 
