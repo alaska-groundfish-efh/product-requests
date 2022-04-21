@@ -2,7 +2,7 @@
 library(raster)
 
 #Location of .gri and .grd files for the ensemble EFH:
-a.rough.efh <- raster("Y:/RACE_EFH_variables/Trawl_Models2/GOA/adult_rougheyeblackspottedcomplex/ensemble_efh")
+a.rough.efh <- raster("Y:/RACE_EFH_variables/Trawl_Models2/GOA/subadult_rougheyeblackspottedcomplex/ensemble_efh")
 
 a.rough.poly0 <- stars::st_as_stars(a.rough.efh)
 a.rough.poly <- sf::st_as_sf(a.rough.poly0,merge = TRUE)
@@ -25,9 +25,10 @@ a.rough.poly4$layer[a.rough.poly4$layer==5] <- 4                      # This fla
 # you can check by just calling plot
 plot(a.rough.poly4)
 
-sf::st_write(obj = a.rough.poly4,dsn = "Y:/RACE_EFH_variables/Trawl_Models2/Jane_rockfish_shapefiles/adult_rougheyeblackspottedcomplex/adult_rougheyeblackspottedcomplex_core.shp",
+sf::st_write(obj = a.rough.poly4,dsn = "Y:/RACE_EFH_variables/Trawl_Models2/Jane_rockfish_shapefiles/subadult_rougheyeblackspottedcomplex/subadult_rougheyeblackspottedcomplex_core.shp",
+             append = FALSE,
          driver = "ESRI Shapefile")
 
 # read it back into R to test if came out right
-test.poly<-sf::st_read("Y:/RACE_EFH_variables/Trawl_Models2/Jane_rockfish_shapefiles/adult_rougheyeblackspottedcomplex/adult_rougheyeblackspottedcomplex_core.shp")
+test.poly<-sf::st_read("Y:/RACE_EFH_variables/Trawl_Models2/Jane_rockfish_shapefiles/subadult_rougheyeblackspottedcomplex/subadult_rougheyeblackspottedcomplex_core.shp")
 plot(test.poly)
